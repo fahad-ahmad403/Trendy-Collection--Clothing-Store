@@ -45,7 +45,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Trendy-Collection--Clothing-Store">
         <Suspense fallback={<HomePageLoader />}>
           <CartProvider>
             <ProductProvider>
