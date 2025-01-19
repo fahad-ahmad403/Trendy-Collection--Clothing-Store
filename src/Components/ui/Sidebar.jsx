@@ -25,6 +25,10 @@ export function Sidebar({ isOpen, setIsOpen }) {
     setIsOpen(false);
   }
 
+  function currentYear() {
+    return new Date().getFullYear();
+  }
+
   return (
     <div
       className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-20 ${
@@ -60,7 +64,7 @@ export function Sidebar({ isOpen, setIsOpen }) {
           </ul>
         </nav>
         <div className="p-4 border-t border-black/30">
-          <p className="text-sm text-black">© 2024 Trendy Collection</p>
+          <p className="text-sm text-black">© {currentYear()} Trendy Collection</p>
         </div>
       </div>
       <Outlet />
